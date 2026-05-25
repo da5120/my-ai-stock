@@ -8,8 +8,8 @@ st.set_page_config(page_title="AI 股票分析助手", layout="centered")
 st.title("📈 AI 股票分析助手")
 
 # --- 2. 設定 API Key ---
-# 請將下方引號內的文字替換成你申請的 API Key
-genai.configure(api_key="AIzaSyDBDBlfqrXKGrNEbQ00bShbUnAJ7DxrPP8")
+# 安全寫法：教程式去 Streamlit 的 Secrets 保險箱裡面拿鑰匙
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])  # ✅ 換成這行
 model = genai.GenerativeModel('gemini-2.5-flash')
 
 # --- 3. 建立使用者介面 (輸入框與按鈕) ---

@@ -4,7 +4,7 @@ import pandas as pd
 import google.generativeai as genai
 
 # --- 1. 設定網頁標題與外觀 ---
-st.set_page_config(page_title="AI 股票分析助手", layout="centered")
+st.set_page_config(page_title="閒閒的鹹魚股市分析助手", layout="centered")
 st.title("📈 閒閒的鹹魚股市分析助手")
 
 # --- 2. 設定 API Key ---
